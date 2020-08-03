@@ -4,14 +4,14 @@ For most people, school is just a place where they get educated and have friends
 ## Features
 Here are the main features of Remarque!
 ### Info
-a page where users can look for help from professional organizations working to help kids like them. 
+A page where users can look for help from professional organizations working to help kids like them. 
 ### Minigames
-video games are great ways to relieve stress, which is why we incorporated those for people who need to distract themselves
+Video games are great ways to relieve stress, which is why we incorporated those for people who need to distract themselves
 ### Chat
-we wanted people to be able to connect with people who can help or are going through similar issues as them
+We wanted people to be able to connect with people who can help or are going through similar issues as them.
 
 ## Contributors
 * **Riley Chou** - frontend - [rileychou](https://github.com/rileychou)
-* **Yumeng He** - Rock, Paper, Scissors - [cathartic-ash](https://github.com/cathartic-ash)
+* **Yumeng He** - Rock Paper Scissors, Pong, pictures - [cathartic-ash](https://github.com/cathartic-ash)
 * **Aayush Gupta** - Chat, frontend - [twippybhai](https://github.com/twippybhai)
 * **Phoebe Tang** - Snake - [adironene](https://github.com/adironene)
