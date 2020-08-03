@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Chat</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vuex"></script>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="info.html">info</a></li>
+            <li><a href="games.html">minigames</a></li>
+            <li><a href="chat.html">chat</a></li>
+        </ul>
+    </div>
+    <header>
+        <h1>chat<br><span class="subheading">You are not alone</span></h1>
+    </header>
+    <section id="chat">
+        <div id="app">
+            <input v-model="username" placeholder="Username" />
+            <ul>
+                <li v-for="text in texts">{{text.id}}: {{text.text}}</li>
+            </ul>
+            <input v-model="newText" v-on:keyup.enter="addText" id="text" type="text" placeholder="Message here..." />
+        </div>
+    </section>
+    <footer>
+        <small>2020 © made with &hearts; by remarque</small>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+
+        var app = new Vue({
+            el: "#app",
+            data: {
+                texts: [
+                    { id: "", text: "Type your first message" },
+                ],
+
+                newText: "",
+                username: "",
+            },
+            mounted() {
+                if (localStorage.getItem("texts")) {
+                    try {
+                        this.texts = JSON.parse(localStorage.getItem('texts'));
+                    }
+                    catch (e) {
+                        localStorage.removeItem("texts");
+                    }
+
+                }
+
+                if (localStorage.username) {
+                    this.username = localStorage.username;
+                }
+            },
+            methods: {
+                addText() {
+                    this.texts.push({
+                        id: this.username,
+                        text: this.newText
+                    });
+                    this.newText = "";
+                    this.saveTexts();
+                },
+                saveTexts() {
+                    const parsed = JSON.stringify(this.texts);
+                    localStorage.setItem("texts", parsed)
+                    ref.putString(parsed).then(function (snapshot) {
+                        console.log('Uploaded a raw string!');
+                    });
+                },
+            },
+            watch: {
+                username(newUsername) {
+                    localStorage.username = newUsername;
+                }
+            },
+        })
+    </script>
+</body>
+</html>

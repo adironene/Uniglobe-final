@@ -1,0 +1,316 @@
+@font-face {
+    font-family: "Alphabetized Cassette Tape"; src: url(fonts/alphabetized\ cassette\ tapes.ttf);
+}
+
+@font-face {
+    font-family: "Straight Jacket BB"; src: url('fonts/straightjacketbb_reg.ttf');
+}
+
+@font-face {
+    font-family: "Straight Jacket BB Bold"; src: url('fonts/straightjacketbb_bold.ttf');
+}
+
+@font-face {
+    font-family: "Ink Free Normal"; src: url('fonts/ink-free-normal.ttf')
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url('fonts/Lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Lato-Italic";
+    src: url('fonts/Lato-Italic.ttf')
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url('fonts/Lato-Regular.ttf')
+}
+
+h1 {
+    font-family: "Alphabetized Cassette Tape", sans-serif;
+    font-size: 5em;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: "Alphabetized Cassette Tape", sans-serif;
+    font-size: 4em;
+    font-weight: 100;
+    line-height: 0px;
+    color: black;
+}
+
+h3 {
+    font-family: "Alphabetized Cassette Tape", sans-serif;
+
+}
+
+h4 {
+    font-family: "Alphabetized Cassette Tape", sans-serif;
+
+}
+
+h5 {
+    font-family: "Alphabetized Cassette Tape", sans-serif;
+
+}
+
+h6 {
+    font-family: "Alphabetized Cassette Tape", sans-serif;
+
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #28448f;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index:1;
+}
+
+.navbar li {
+    float: left;
+    font-size: 1em;
+}
+
+.navbar li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #1a2d5e;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(83,114,198);
+    padding: 3rem;
+    margin: 0;
+    height: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+body {
+    padding-top: 40px;
+    margin: 0;
+    padding: 0;
+    background-color: #def0ff;
+}
+
+header h1 {
+    font-size: 7em;
+}
+
+section {
+    padding: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+section h1 {
+    margin: 0;
+    line-height: 0.3em;
+}
+
+p, table {
+    font-size: 150%;
+    font-family: Lato-Regular;
+}
+
+#home-image {
+    display: inline-block;
+    vertical-align: central;
+    width: 40%;
+}
+
+@media (max-width: 500px) {
+    #home-image{
+        display: inline-block;
+        vertical-align: central;
+        width: 100%;
+    }
+}
+
+#home-text {
+    display: inline-block;
+    text-align: center;
+    width: 59%;
+    bottom: 2.5rem;
+}
+
+@media (max-width: 800px) {
+    #home-text {
+        width: 59%;
+        margin-top: 5rem;
+        font-size: 50%;
+    }
+    #home-image{
+        margin-bottom: 4.5rem;
+        width: 40%;
+    }
+    .person {
+        font-size: 50%;
+    }
+}
+
+#testimonials {
+    text-align: center;
+    align-items: stretch;
+}
+
+#container-to-fix-crap {
+    display: flex;
+    align-items: stretch;
+}
+
+.person {
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    margin: 2em;
+    min-height: 100%;
+    padding: 1.5em;
+    font-size: 0.7em;
+    box-shadow: 5px 5px 8px #777777;
+    background-color: aliceblue;
+    border-radius: 4px;
+}
+
+#games {
+    text-align: center;
+}
+
+.gamelink {
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    margin: 2em;
+    padding: 1.5em;
+    border: 1px solid black;
+}
+
+input[type = text], select {
+    width: 90%;
+    padding: 1%;
+    font-size: 100%;
+    background-color: rgba(117, 162, 255, 0.85);
+    border-radius: 5px;
+    border: .2rem solid black;
+    position: fixed;
+    bottom: 6rem;
+    margin: auto;
+    float: left;
+}
+
+
+
+#chat {
+    height: 40rem;
+    overflow:scroll;
+    overflow-x: hidden;
+    background-color: white;
+    border: .2rem dashed black;
+    padding: 1rem;
+    margin:1em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+footer {
+    background-color: rgb(83,114,198);
+    padding: 2em 0;
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul, li {
+    font-size: 120%;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+}
+
+th {
+    background-color: #568b8f;
+    padding: 15px;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 2px solid #dddddd;
+}
+
+td p {
+    font-size: 0.9em;
+}
+
+.cell {
+    width: 30%;
+}
+
+.description-padding {
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: scale(.9,.9)
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-element {
+    animation: fade-in 1.4s;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.subheading{
+    font-size: 0.65em;
+}
+
+#height-align {
+    height: 480px;
+    /*position: relative;*/
+}
+
+#height-align2 {
+    margin: 0;
+    /*position: relative;*/
+    -ms-transform: translateY(-60%);
+    transform: translateY(-60%);
+}
+
+.home-margin {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
